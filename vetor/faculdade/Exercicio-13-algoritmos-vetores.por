@@ -1,16 +1,8 @@
-programa{
+programa{
 	
-	funcao inicio(){
-		inteiro v[10], i, v2[10]
-
-		para(i=0;i<10;i++) {
-			leia(v[i])
-		}
-
-		para(i=0;i<10;i++) {
-			v2[i]=v[9-i]
-			escreva(v2[i], "\n")
-		}
+	funcao inicio(){
+		cadeia nome[8]
+		inteiro quanDVD[8]
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -18,9 +10,9 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 171; 
+ * @POSICAO-CURSOR = 71; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {v, 4, 10, 1}-{v2, 4, 20, 2};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

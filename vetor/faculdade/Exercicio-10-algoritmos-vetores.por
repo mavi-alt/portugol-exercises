@@ -1,15 +1,23 @@
-programa{
+programa{
 	
-	funcao inicio(){
-		inteiro v[10], i, v2[10]
+	funcao inicio(){
+		inteiro v[10], i, j=0
 
 		para(i=0;i<10;i++) {
 			leia(v[i])
-		}
 
+			se (v[i] > 50) {
+				j++
+			}
+		}
+		
 		para(i=0;i<10;i++) {
-			v2[i]=v[9-i]
-			escreva(v2[i], "\n")
+			se (v[i] > 50) {
+				escreva(v[i], " na posição ", i, "\n")
+			}
+		}
+		se (j==0) {
+			escreva("Não há nenhum número que atenda a condição")
 		}
 	}
 }
@@ -18,9 +26,9 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 171; 
+ * @POSICAO-CURSOR = 311; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {v, 4, 10, 1}-{v2, 4, 20, 2};
+ * @SIMBOLOS-INSPECIONADOS = {v, 4, 10, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
